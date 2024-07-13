@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sleep</title>
+  <link rel="stylesheet" href="sl.css" />
+</head>
+
+<body>
+  <div id="nav">
+    <img src="../images/MENTALCRARELOGO.avif" alt="" />
+    <a href="index.html" class="home">
+      <h4>HOME</h4>
+    </a>
+    <h4>SERVICES</h4>
+    <h4>RESOURCES</h4>
+    <h4>ABOUT</h4>
+    <h4>CONTACT US</h4>
+  </div>
+  <div id="page1">
+    <h1 class="stress-animation">SLEEP</h1>
+    <h3>Why Quality Rest is Crucial for Health ?
+    </h3>
+    <p>Sleep is a vital component of our overall health and well-being, playing a crucial role in various bodily
+      functions. Quality sleep helps to rejuvenate the mind and body, aids in cognitive function, supports emotional
+      stability, and enhances physical health. During sleep, the body undergoes essential processes such as cell repair,
+      memory consolidation, and the regulation of hormones that influence growth, appetite, and stress. Lack of adequate
+      sleep can lead to a host of problems including impaired memory, weakened immune function, increased risk of
+      chronic diseases, and mental health issues such as anxiety and depression. Prioritizing good sleep hygiene can
+      therefore significantly improve one's quality of life.</p>
+  </div>
+
+  <div class="warpper">
+    <input class="radio" id="one" name="group" type="radio" checked>
+    <input class="radio" id="two" name="group" type="radio">
+    <input class="radio" id="three" name="group" type="radio">
+    <input class="radio" id="four" name="group" type="radio">
+
+    <div class="tabs">
+      <label class="tab" id="one-tab" for="one">Sleep monitoring</label>
+      <label class="tab" id="two-tab" for="two">Music</label>
+      <label class="tab" id="three-tab" for="three">Video</label>
+      <label class="tab" id="four-tab" for="four">About</label>
+    </div>
+
+    <div class="panels">
+      <div class="panel" id="one-panel">
+
+        <div class="top-container">
+          <div class="header">
+            <h1>Rate your sleep</h1>
+            <img class="moonimg" src="../images/moon.png" alt="Moon Icon" class="icon">
+          </div>
+          <div class="question">
+            <label for="sleepQuality">How well did you sleep last night?</label>
+            <input type="range" id="sleepQuality" name="sleepQuality" min="1" max="5" value="3" step="1">
+            <span id="qualityText">Okay</span>
+          </div>
+          <div class="question">
+            <label>Did you wind down before bed for an hour?</label>
+            <div class="options">
+              <button class="option" onclick="toggleOption(this)">No</button>
+              <button class="option" onclick="toggleOption(this)">Yes</button>
+            </div>
+          </div>
+          <div class="question">
+            <label>Did you successfully manage your intake?</label>
+            <div class="options">
+              <button class="option" onclick="toggleOption(this)">No</button>
+              <button class="option" onclick="toggleOption(this)">Yes</button>
+            </div>
+          </div>
+          <div class="question">
+            <label>Did you practice relaxation before bed?</label>
+            <div class="options">
+              <button class="option" onclick="toggleOption(this)">No</button>
+              <button class="option" onclick="toggleOption(this)">Yes</button>
+            </div>
+          </div>
+          <div class="question">
+            <label>Did you ensure a comfortable environment?</label>
+            <div class="options">
+              <button class="option" onclick="toggleOption(this)">No</button>
+              <button class="option" onclick="toggleOption(this)">Yes</button>
+            </div>
+          </div>
+          <button class="save-button">SAVE</button>
+        </div>
+      </div>
+      <div class="panel" id="two-panel">
+        <div class="bottom-container">
+          <div class="box-row">
+            <div class="box">
+              <a href="https://youtu.be/YRJ6xoiRcpQ?si=rLz2o9CcbBzNZZf_">
+                <img src="../images/music1.webp" alt="Image 1"></a>
+            </div>
+            <div class="box">
+              <a href="https://youtu.be/xRcWlA1I9z0?si=i3n-PcDP-UWqq9Ij">
+                <img src="../images/music2.avif" alt="Image 2"></a>
+            </div>
+          </div>
+          <div class="box-row">
+            <div class="box">
+              <a href="https://youtu.be/5jca-sWgemI?si=4aQAKXahUpW_C2FB">
+                <img src="../images/flute.webp" alt="Image 3"></a>
+            </div>
+            <div class="box">
+              <a href="https://youtu.be/SaAOnpDwyzA?si=QO9hpsB98LaN6kJd">
+                <img src="../images/image6.jpg" alt="Image 4"></a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="panel" id="three-panel">
+        <div class="bottom-container">
+          <div class="box-row">
+            <div class="box">
+              <a href="https://youtu.be/5MuIMqhT8DM?si=4D9UbB6aNAMHos7k">
+                <img src="../images/matt walker.jpg" alt="Image 1"></a>
+              <a href="https://en.wikipedia.org/wiki/Matthew_Walker_(scientist)">
+                <h3>Matthew Walker</h3>
+              </a>
+            </div>
+            <div class="box">
+              <a href="https://youtu.be/xRcWlA1I9z0?si=i3n-PcDP-UWqq9Ij">
+                <img class="sadhguruimg" src="../images/s4.jpg" alt="Image 2"></a>
+              <a href="https://en.wikipedia.org/wiki/Sadhguru">
+                <h3>Sadhguru</h3>
+              </a>
+            </div>
+          </div>
+          <div class="box-row">
+            <div class="box">
+              <a href="https://youtu.be/5jca-sWgemI?si=4aQAKXahUpW_C2FB">
+                <img class="dan" src="../images/dan.jpg" alt="Image 2"></a>
+              <a href="https://sleepspace.com/about-dr-dan-gartenberg/">
+                <h3>Dan Garterberg</h3>
+              </a>
+            </div>
+            <div class="box">
+              <a href="https://youtu.be/SaAOnpDwyzA?si=QO9hpsB98LaN6kJd">
+                <img class="bruce" src="../images/bruce.jpg" alt="Image 4"></a>
+              <a href="https://en.wikipedia.org/wiki/Bruce_Lipton">
+                <h3>DR.Bruce Lipton</h3>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="panel" id="four-panel">
+        <div class="bottom-container">
+          <p>Sleep is an essential and complex biological process that is crucial for overall health and well-being. It
+            occupies roughly one-third of our lives, serving as a fundamental pillar that supports physical health,
+            mental health, and cognitive functioning. During sleep, the body undergoes various restorative processes,
+            including muscle growth, tissue repair, protein synthesis, and the release of growth hormones. These
+            activities are vital for physical health and recovery from daily wear and tear. Additionally, sleep plays a
+            critical role in brain function, contributing to cognitive processes such as learning, memory consolidation,
+            problem-solving, and emotional regulation. Adequate sleep enhances concentration, productivity, and overall
+            cognitive performance.
+
+            Sleep is divided into several stages, including rapid eye movement (REM) and non-REM sleep, each serving
+            distinct functions. Non-REM sleep, particularly its deep stages, is associated with physical restoration and
+            growth, while REM sleep is closely linked to dreaming and emotional processing. The sleep cycle, which
+            alternates between REM and non-REM stages, repeats multiple times throughout the night, allowing the body
+            and mind to undergo complete restorative processes.
+
+            The impact of sleep on health is profound. Chronic sleep deprivation or poor sleep quality can lead to a
+            range of adverse effects, including weakened immune function, increased susceptibility to infections, weight
+            gain, and a higher risk of chronic conditions such as cardiovascular disease, diabetes, and hypertension.
+            Moreover, insufficient sleep is associated with mental health issues, including anxiety, depression, and
+            mood disorders. Cognitive impairments, such as reduced attention span, slower reaction times, and decreased
+            decision-making abilities, are also common consequences of inadequate sleep.
+
+            To promote optimal sleep, several factors must be considered. Maintaining a regular sleep schedule, creating
+            a conducive sleep environment, and adopting healthy sleep habits are crucial. This includes limiting
+            exposure to screens before bedtime, avoiding caffeine and heavy meals in the evening, and ensuring a
+            comfortable and quiet sleeping space. Additionally, managing stress through relaxation techniques and
+            physical activity can significantly improve sleep quality.
+
+            In conclusion, sleep is a vital process that supports overall health, cognitive function, and emotional
+            well-being. Recognizing the importance of sleep and prioritizing good sleep hygiene practices can lead to
+            significant improvements in quality of life, physical health, and mental resilience.
+
+
+
+
+
+
+          </p>
+
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+  </div>
+
+
+
+  <script src="sl.js"></script>
+</body>
+
+</html>
